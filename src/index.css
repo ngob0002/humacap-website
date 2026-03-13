@@ -1,0 +1,74 @@
+/* src/index.css */
+:root {
+  --color-navy: #0F172A;
+  --color-navy-light: #1E293B;
+  --color-teal: #14B8A6;
+  --color-teal-dark: #0F766E;
+  --color-white: #FFFFFF;
+  --color-gray-50: #F8FAFC;
+  --color-gray-100: #F1F5F9;
+  --color-gray-600: #475569;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: var(--color-gray-50);
+  color: var(--color-navy);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: var(--color-navy);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-navy-light);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background-color: var(--color-teal);
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-teal-dark);
+  transform: translateY(-1px);
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+/* Glassmorphism Card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
